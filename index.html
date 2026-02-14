@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shardul Chat App</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <header class="chat-header">
+            <div class="header-content">
+                <img class="logo" src="CSS/chat2.png" alt="Chat Logo">
+                <div class="header-text">
+                    <h1>Shardul Chat</h1>
+                    <p class="status">🟢 Online</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="container" id="messageContainer">
+                <!-- Messages will appear here -->
+            </div>
+        </div>
+
+        <div class="send-section">
+            <form action="#" id="send-container">
+                <div class="input-wrapper">
+                    <input type="text" name="messageInp" id="messageInp" placeholder="Type your message..." autocomplete="off">
+                    <button class="btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
