@@ -13,12 +13,12 @@ const io = socketIO(server, {
     }
 });
 
-// Serve static files from parent directory
-app.use(express.static(path.join(__dirname, '..')));
+// Serve static files from current directory
+app.use(express.static(__dirname));
 
 // Serve index.html on root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const users = {};
